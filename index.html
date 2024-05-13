@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Document</title>
+  </head>
+  <body id="toggleDarkmode">
+    <div class="dark:bg-slate-800 h-screen w-screen ">
+      <div class="flex-row">
+        <p class="text-xs dark:text-white mx-1">
+          Klicka här för att ändra darkmode
+        </p>
+        <button
+          id="darkmodeButton"
+          class="rounded-lg p-1 bg-indigo-500 dark:bg-indigo-200 h-5 w-5 text-xs m-1 hover:bg-indigo-200 dark:hover:bg-indigo-500"
+        ></button>
+      </div>
+      
+      <div class=" w-full overflow-x-auto overflow-y-hidden sm:overflow-y-scroll">
+        <table class="table-auto border-separate border-spacing-0.5 border-grey-300 dark:border-black rounded-lg dark:text-white">
+          <thead class="">
+            <tr class="bg-indigo-400 dark:bg-indigo-800 h-12">
+              <th scope="col" class="p-5">Product ID</th>
+              <th scope="col" class="">Product Name</th>
+              <th scope="col" class="">Category</th>
+              <th scope="col" class="">Price (USD)</th>
+              <th scope="col" class="">Stock Quantity</th>
+              <th scope="col">Supplier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-indigo-100 dark:bg-indigo-400 h-8">
+              <td class="p-2">001</td>
+              <td class="p-2">Laptop</td>
+              <td class="p-2">22</td>
+              <td class="p-2">800</td>
+              <td class="p-2">25</td>
+              <td class="p-2">Tech Store A</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr class="bg-indigo-200 dark:bg-indigo-600 h-8">
+              <td class="p-2">002</td>
+              <td class="p-2">Smartphone</td>
+              <td class="p-2">Electronics</td>
+              <td class="p-2">800</td>
+              <td class="p-2">40</td>
+              <td class="p-2">Tech Store B</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr class="bg-indigo-100 dark:bg-indigo-400 h-8">
+              <td class="p-2">003</td>
+              <td class="p-2">T-Shirt</td>
+              <td class="p-2">Clothing</td>
+              <td class="p-2">20</td>
+              <td class="p-2">200</td>
+              <td class="p-2">Apparel Inc.</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr class="bg-indigo-200 dark:bg-indigo-600 h-8">
+              <td class="p-2">004</td>
+              <td class="p-2">Running Shoes</td>
+              <td class="p-2">Footwear</td>
+              <td class="p-2">80</td>
+              <td class="p-2">50</td>
+              <td class="p-2">Sports Gear Co.</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr class="bg-indigo-100 dark:bg-indigo-400 h-8">
+              <td class="p-2">005</td>
+              <td class="p-2">Hardcover Book</td>
+              <td class="p-2">Books</td>
+              <td class="p-2">15</td>
+              <td class="p-2">75</td>
+              <td class="p-2">Bookworms Ltd.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
